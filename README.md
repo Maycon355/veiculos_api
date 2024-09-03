@@ -43,3 +43,46 @@ Esta API RESTful permite gerenciar veículos, incluindo a listagem, criação, d
    ```bash
    git clone https://github.com/seu_usuario/seu_repositorio.git
    cd seu_repositorio
+2. Crie e ative um ambiente virtual:
+
+bash
+Copiar código
+python -m venv venv
+source venv/bin/activate  # No Windows, use `venv\Scripts\activate`
+
+3. Instale as dependências:
+bash
+Copiar código
+pip install -r requirements.txt
+
+4. Realize as migrações:
+bash
+Copiar código
+python manage.py migrate
+
+5.Crie um superusuário para acessar o Django Admin:
+bash
+Copiar código
+python manage.py createsuperuser
+
+
+6.Inicie o servidor de desenvolvimento:
+bash
+Copiar código
+python manage.py runserver
+
+7.Acesse a API:
+Visite http://127.0.0.1:8000/ para acessar a API.
+Utilize as credenciais criadas para autenticação via /api/token/.
+
+
+8.Testes Unitários
+Para executar os testes unitários:
+bash
+Copiar código
+python manage.py test
+Documentação da API
+A API está documentada utilizando o Swagger e pode ser acessada em: http://127.0.0.1:8000/swagger/
+
+Contato
+Em caso de dúvidas, entre em contato pelo e-mail mayconmottadasilva@outlook.com.
